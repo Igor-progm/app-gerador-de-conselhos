@@ -25,4 +25,5 @@ function gerenciarDisabled() {
     }, 2000);
 }
 
+buscarConselho()
 tirarUmConselho()
