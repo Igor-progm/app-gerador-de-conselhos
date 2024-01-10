@@ -1,0 +1,72 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    background-color: var(--background-color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10px;
+}
+
+.container .card {
+    background-color: var(--card-color);
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px 0px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .card .titulo-conselho {
+    text-transform: uppercase;
+    color: var(--advice-dice-color);
+    letter-spacing: 3.5px;
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+.container .card .paragrafo-conselho {
+    color: var(--text-color);
+    font-size: 22px;
+    padding: 0px 20px 20px 20px;
+    font-weight: 800;
+}
+
+.container .card .divisor .imagem-divisor {
+    width: 90%;
+}
+
+.container .card .botao {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+    cursor: pointer;
+    border: none;
+    background-color: var(--advice-dice-color);
+    transition: 0.2s ease-in-out;
+}
+
+.container .card .botao:disabled {
+    background-color: hsl(150, 39%, 69%);
+    cursor: initial;
+}
+
+.container .card .botao:disabled:hover {
+    background-color: hsl(150, 39%, 69%);
+    box-shadow: unset;
+}
+
+.container .card .botao:hover {
+    box-shadow: 1px 1px 20px -5px var(--advice-dice-color);
+}
