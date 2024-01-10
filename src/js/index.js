@@ -24,3 +24,5 @@ function gerenciarDisabled() {
         dadoBotao.removeAttribute('disabled')
     }, 2000);
 }
+
+tirarUmConselho()
