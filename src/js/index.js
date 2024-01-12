@@ -3,8 +3,7 @@ const idConselho = document.getElementById('id')
 const descricaoConselho = document.getElementById('advice-description')
 
 async function buscarConselho() {
-    const url = "https://api.adviceslip.com/advice"
-    const resposta = await fetch(url)
+    const resposta = await fetch("https://api.adviceslip.com/advice")
     return await resposta.json()
 }
 
@@ -15,6 +14,9 @@ async function tirarUmConselho() {
     gerenciarDisabled()
 }
 
+buscarConselho()
+tirarUmConselho()
+
 dadoBotao.addEventListener('click', tirarUmConselho)
 
 function gerenciarDisabled() {
@@ -24,6 +26,3 @@ function gerenciarDisabled() {
         dadoBotao.removeAttribute('disabled')
     }, 2000);
 }
-
-buscarConselho()
-tirarUmConselho()
